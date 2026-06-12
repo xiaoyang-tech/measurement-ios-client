@@ -35,7 +35,6 @@ class CameraViewController: BaseViewController {
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var cameraUnavailableLabel: UILabel!
     @IBOutlet weak var resumeButton: UIButton!
-    @IBOutlet weak var overlayView: OverlayView!
 
     private var measurementOverlay: MeasurementOverlayView!
 

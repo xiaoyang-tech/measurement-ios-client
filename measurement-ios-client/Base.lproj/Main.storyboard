@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oo8-ba-lc3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oo8-ba-lc3">
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -13,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="pTd-7L-ZcH">
             <objects>
-                <viewController id="a7F-dW-q1j" customClass="RootViewController" customModule="measurementSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a7F-dW-q1j" customClass="RootViewController" customModule="measurement_ios_client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z9N-to-T6n">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +125,7 @@
         <!--Bottom Sheet View Controller-->
         <scene sceneID="TJL-c0-R3b">
             <objects>
-                <viewController id="Tdq-sF-7ry" customClass="BottomSheetViewController" customModule="measurementSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tdq-sF-7ry" customClass="BottomSheetViewController" customModule="measurement_ios_client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="IuR-IY-hkt">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +378,7 @@
         <!--Camera View Controller-->
         <scene sceneID="HbP-oh-wnB">
             <objects>
-                <viewController storyboardIdentifier="CAMERA_VIEW_CONTROLLER" id="Kt5-rY-Ciw" customClass="CameraViewController" customModule="measurementSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CAMERA_VIEW_CONTROLLER" id="Kt5-rY-Ciw" customClass="CameraViewController" customModule="measurement_ios_client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cvy-YR-hBy">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,10 +403,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBZ-NC-I9J" customClass="OverlayView" customModule="FaceLandmarker">
-                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wEB-rH-Ff8"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -416,20 +411,15 @@
                             <constraint firstItem="c9K-rR-QeC" firstAttribute="centerY" secondItem="Cvy-YR-hBy" secondAttribute="centerY" id="BAY-JW-ftP"/>
                             <constraint firstItem="KI1-KU-P3k" firstAttribute="top" secondItem="Cvy-YR-hBy" secondAttribute="top" id="EUI-s0-vmQ"/>
                             <constraint firstItem="kaZ-rC-swS" firstAttribute="leading" secondItem="wEB-rH-Ff8" secondAttribute="leading" constant="10" id="M3J-FW-5zQ"/>
-                            <constraint firstAttribute="bottom" secondItem="BBZ-NC-I9J" secondAttribute="bottom" id="Nua-Pb-UjF"/>
-                            <constraint firstAttribute="trailing" secondItem="BBZ-NC-I9J" secondAttribute="trailing" id="SFg-mY-CxF"/>
                             <constraint firstItem="kaZ-rC-swS" firstAttribute="top" secondItem="wEB-rH-Ff8" secondAttribute="top" constant="20" id="Saa-mt-gbE"/>
                             <constraint firstAttribute="bottom" secondItem="KI1-KU-P3k" secondAttribute="bottom" id="T3L-ya-9dq"/>
                             <constraint firstItem="KI1-KU-P3k" firstAttribute="leading" secondItem="Cvy-YR-hBy" secondAttribute="leading" id="cxv-jd-Wxf"/>
                             <constraint firstItem="KI1-KU-P3k" firstAttribute="trailing" secondItem="Cvy-YR-hBy" secondAttribute="trailing" id="eVg-nB-VMH"/>
-                            <constraint firstItem="BBZ-NC-I9J" firstAttribute="top" secondItem="Cvy-YR-hBy" secondAttribute="top" id="qSg-TV-k01"/>
-                            <constraint firstItem="BBZ-NC-I9J" firstAttribute="leading" secondItem="Cvy-YR-hBy" secondAttribute="leading" id="r5e-ul-cms"/>
                             <constraint firstItem="wEB-rH-Ff8" firstAttribute="trailing" secondItem="kaZ-rC-swS" secondAttribute="trailing" constant="10" id="uZq-I7-x05"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraUnavailableLabel" destination="kaZ-rC-swS" id="C9g-Do-uG5"/>
-                        <outlet property="overlayView" destination="BBZ-NC-I9J" id="LFN-sZ-Xzb"/>
                         <outlet property="previewView" destination="KI1-KU-P3k" id="jV3-pT-tuL"/>
                         <outlet property="resumeButton" destination="c9K-rR-QeC" id="gli-wG-fck"/>
                     </connections>
@@ -457,7 +447,7 @@
         <!--Guide View Controller-->
         <scene sceneID="8nB-Oj-bjk">
             <objects>
-                <viewController id="QM9-3f-yrD" customClass="GuideViewController" customModule="measurementSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QM9-3f-yrD" customClass="GuideViewController" customModule="measurement_ios_client" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Svf-cf-sGe"/>
                         <viewControllerLayoutGuide type="bottom" id="x8U-xV-JO3"/>
@@ -476,7 +466,7 @@
         <!--Media Library View Controller-->
         <scene sceneID="XiS-ga-rka">
             <objects>
-                <viewController storyboardIdentifier="MEDIA_LIBRARY_VIEW_CONTROLLER" id="nMZ-zX-ejP" customClass="MediaLibraryViewController" customModule="measurementSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MEDIA_LIBRARY_VIEW_CONTROLLER" id="nMZ-zX-ejP" customClass="MediaLibraryViewController" customModule="measurement_ios_client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BFl-aP-2VH">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
